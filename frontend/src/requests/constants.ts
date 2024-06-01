@@ -1,0 +1,1 @@
+export const requestBaseUrl = 'http://localhost:3001'

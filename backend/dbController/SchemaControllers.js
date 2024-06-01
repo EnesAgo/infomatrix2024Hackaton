@@ -10,11 +10,21 @@ mongoose.connect(process.env.MONGODB_URI, () => {
 })
 
 
-const ExampleSchema = new mongoose.Schema({
-    example: String
+const UserSchema = new mongoose.Schema({
+    username: String,
+    email: String,
+
+    password: String,
+    uuID: String,
 })
 
+const UserGPTPromptSchema = new mongoose.Schema({
+    prompt: String,
+    answer: String,
+    uuID: String,
+})
 
 module.exports = {
-    EventSchema: mongoose.model("Example", ExampleSchema)
+    UserSchema: mongoose.model("User", UserSchema),
+    GPTPrompt: mongoose.model("GPTPrompt", UserGPTPromptSchema)
 }

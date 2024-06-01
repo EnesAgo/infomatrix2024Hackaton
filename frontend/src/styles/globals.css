@@ -2,17 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
+
 html, body, #__next {
   height: 100%;
   width: 100%;
+  background: #f6f5f7;
+
 }
 
 #__next {
   display: grid;
-  grid-template-areas:
-    "header-menu"
-    "main";
+  /*grid-template-areas:*/
+  /*  "header-menu"*/
+  /*  "main";*/
 
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "header-menu main";
+
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr;
+}
+
+.gridHeader{
+  grid-area: header-menu;
+  background: #f6f5f7;
+}
+.gridMain{
+  grid-area: main;
+  background: #f6f5f7;
+
+}
+
+.glassMorphism{
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }

@@ -112,7 +112,8 @@ project-root/
 
 ## Backend Implementation
 
-- **Setup**:
+### Setup
+- **Github Repo**:
     1. Clone Github Repo:
        `git clone https://github.com/EnesAgo/infomatrix2024Hackaton.git`
     2. Install Dependencies:
@@ -229,7 +230,6 @@ app.get('/getMessages', async (req, res) => {
 ```
 
 
-## Frontend Implementation
 ## Frontend Implementation
 
 ### Setup

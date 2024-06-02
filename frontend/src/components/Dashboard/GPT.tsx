@@ -28,6 +28,8 @@ export default function GPT() {
                 setAiAnswer(responseData.choices[0].message.content)
 
                 console.log(responseData)
+                promptRef.current.value = ''
+
             return
         }
         catch (e: any){

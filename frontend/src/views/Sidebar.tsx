@@ -35,6 +35,22 @@ export default function Sidebar({ tab }: any) {
                         </Link>
                     </li>
                     <li className={"w-[70%]"}>
+                        <Link href={"/tech-news"} className={`flex gap-4 items-center ${tab=="techNews" ? "opacity-100 underline underline-offset-[5px]" : "opacity-50"} hover:opacity-100`}>
+                            <img src="/assets/images/news.png" alt="settings icon" className="w-6 h-6" />
+                            <p
+                                // className={"text-[rgba(0,0,0,.35)] hover:text-gray-800"}
+                            >Tech News</p>
+                        </Link>
+                    </li>
+                    <li className={"w-[70%]"}>
+                        <Link href={"/books"} className={`flex gap-4 items-center ${tab=="books" ? "opacity-100 underline underline-offset-[5px]" : "opacity-50"} hover:opacity-100`}>
+                            <img src="/assets/images/book.png" alt="settings icon" className="w-6 h-6" />
+                            <p
+                                // className={"text-[rgba(0,0,0,.35)] hover:text-gray-800"}
+                            >Books</p>
+                        </Link>
+                    </li>
+                    <li className={"w-[70%]"}>
                         <span onClick={() => logOut()} className={`flex gap-4 items-center cursor-pointer opacity-50 hover:opacity-100`}>
                             <img src="/assets/images/logout.png" alt="settings icon" className="w-7 h-7" />
                             <p

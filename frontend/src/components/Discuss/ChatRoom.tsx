@@ -41,7 +41,8 @@ export default function ChatRoom() {
             const dataToSend = {
                 text: messageRef.current.value || null,
                 createdAt: new Date()  || null,
-                uuID: userData?.uuID  || null
+                uuID: userData?.uuID  || null,
+                username: userData?.username || null
             }
             console.log(dataToSend)
             const docRef = await addDoc(collection(firestoreDB, "messages"), dataToSend);

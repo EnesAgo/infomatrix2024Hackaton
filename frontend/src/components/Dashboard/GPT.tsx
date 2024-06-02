@@ -35,6 +35,8 @@ export default function GPT() {
             alertError(e.code)
         }
 
+        promptRef.current.value = ''
+
     }
 
 

@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  font-family: poppins;
+}
 
 html, body, #__next {
   height: 100%;
@@ -25,7 +28,7 @@ html, body, #__next {
 
 .gridHeader{
   grid-area: header-menu;
-  background: #f6f5f7;
+  /*background: #f6f5f7;*/
 }
 .gridMain{
   grid-area: main;

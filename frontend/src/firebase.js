@@ -2,12 +2,12 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDI292RmKodd0e84ITF1XccKhvALPyXf0E",
-    authDomain: "thihive.firebaseapp.com",
-    projectId: "thihive",
-    storageBucket: "thihive.appspot.com",
-    messagingSenderId: "5486000504",
-    appId: "1:5486000504:web:2c2ca7e254af6dee03308d"
+    apiKey: "AIzaSyApgM1lk5rJJb6bWfzglwmMu4oT9GLbWyY",
+    authDomain: "hackaton2024romania.firebaseapp.com",
+    projectId: "hackaton2024romania",
+    storageBucket: "hackaton2024romania.appspot.com",
+    messagingSenderId: "886388558656",
+    appId: "1:886388558656:web:dd5c51420f55eb2b1b48a5"
 };
 
 const app = initializeApp(firebaseConfig);
@@ -15,5 +15,4 @@ const app = initializeApp(firebaseConfig);
 export const firestoreDB = getFirestore(app);
 
 
-// export const auth = app.auth()
 export default app

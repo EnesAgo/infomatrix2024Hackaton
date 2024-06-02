@@ -14,7 +14,7 @@ const config: Config = {
         // ...fontFamily,
         'sans': ['Arial', 'Helvetica', 'sans-serif'],
         'roboto': ['roboto'],
-        'Poppints': ['poppins']
+        'Poppins': ['poppins']
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
